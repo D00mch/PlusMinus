@@ -1,7 +1,7 @@
 # PlusMinus
 <b> Plus minus — простая математическая игра с простыми правилами</b>
 
-Код игры с комментариями.
+Здесь код игры с комментариями.
 
 Игру можно скачать на <a href="https://play.google.com/store/apps/details?id=com.livermor.plusminus">Google play</a>
 
