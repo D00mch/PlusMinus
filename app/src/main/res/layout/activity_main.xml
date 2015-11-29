@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.livermor.myapplication.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/lightGreyBg">
+
+        <View
+            android:id="@+id/center"
+            android:layout_width="10dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/upper_scoreboard"
+            android:background="@drawable/bg_red"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/sides"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/center"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="@dimen/label_padding_sides"
+            android:paddingRight="@dimen/label_padding_sides"
+            android:text="Бот: 0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/label_text_size"/>
+
+        <GridLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/my_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/upper_scoreboard"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:layout_marginLeft="@dimen/sides"
+            android:layout_marginRight="@dimen/sides"
+            android:layout_marginBottom="@dimen/up_bottom"
+            android:layout_marginTop="@dimen/up_bottom"/>
+
+        <TextView
+            android:id="@+id/lower_scoreboard"
+            android:background="@drawable/bg_blue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/label_height"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/my_grid"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/center"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="@dimen/label_padding_sides"
+            android:paddingRight="@dimen/label_padding_sides"
+            android:text="Вы: 0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/label_text_size"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
